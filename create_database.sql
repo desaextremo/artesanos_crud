@@ -1,3 +1,8 @@
+-- Crear usuario de base de datos
+CREATE USER 'admin'@'%' IDENTIFIED BY 'admin123';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
 -- Crear base de datos
 CREATE SCHEMA IF NOT EXISTS artesanos DEFAULT CHARACTER SET utf8 ;
 	
