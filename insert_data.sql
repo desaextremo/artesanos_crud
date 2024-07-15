@@ -1,3 +1,5 @@
+-- Seleccionar base de datos
+USE artesanos;
 delete from artesano;
 delete from municipio;
 delete from departamento;
